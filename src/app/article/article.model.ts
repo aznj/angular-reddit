@@ -22,7 +22,7 @@ export class Article {
       const domainAndPath: string = this.link.split('//')[1];
       return domainAndPath.split('/')[0];
     } catch (err) {
-      return null;
+      return null as any;
     }
   }
 }
